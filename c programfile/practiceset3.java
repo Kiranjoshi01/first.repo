@@ -41,15 +41,15 @@ Scanner sc=new Scanner(System.in);
 float income =2.5f;
 float tax=0;
 System.out.println("enter the value of income");
-int a = sc.nextInt();
-if (income >=2.5) {
-    tax=0; 
+float a = sc.nextFloat();
+if (income>=0 && income<=2.5f) {
+    tax = income+0f; 
 }
 else if (income>2.5 && income<=5.0) {
      tax =income+0.05f;
     
 } else if(income>5.0 && income<=10.0){
-    tax=income+0.05f+0.10f;
+    tax=tax+0.05f;
     
 }
 else if(income>10.0 && income<=30.0){
